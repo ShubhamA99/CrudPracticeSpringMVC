@@ -17,15 +17,32 @@ public class Employee {
 	private String name;
 	private String dept;
 	private String address;
+	private double salary;
+	private String designation;
 	
 	
-	public Employee(int id, String name, String dept, String address) {
+	public Employee(int id, String name, String dept, String address, double salary, String designation) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.dept = dept;
 		this.address = address;
+		this.salary = salary;
+		this.designation = designation;
 	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	public String getDesignation() {
+		return designation;
+	}
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
